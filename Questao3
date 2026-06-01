@@ -1,0 +1,51 @@
+# include <stdio.h> 
+//triangulo
+int main(){
+    int  i, j, h, tipo;
+    printf("informe a altura do triangulo: ");
+    scanf("%d", &h);
+
+    printf("Digite 1 para triangulo preenchido ou 0 para triangulo vazado: ");
+    scanf("%d", &tipo);
+
+    if (tipo == 1)
+    {
+        for (i = 0; i < h; i++){
+      for(j = 0; j <= i; j++){
+          printf ("*");
+      }
+        printf("\n");
+    }
+    }
+    
+    if (tipo == 0)
+    {
+        for (i = h; i <= h; i++)
+    {
+        printf("*");
+    }
+    printf("\n");
+    
+    for (i = 2; i < h; i++){
+        printf("*");
+
+        for (j = 3; j <= i; j++){
+            printf(" ");
+        }
+        printf("* \n");
+    }
+
+    for (i = 1; i < h; i++)
+    {
+        printf("*");
+    }
+    printf("* \n");
+    }
+
+    else{
+        printf("Digite 1 ou 0 por gentileza");
+    }
+
+    
+    return 0;
+}

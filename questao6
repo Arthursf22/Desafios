@@ -1,0 +1,44 @@
+# include <stdio.h> 
+//arvore
+int main(){
+    
+    int i, j, B, A, L;
+    printf("Informe a base da arvore: ");
+    scanf("%d", &B);
+
+    printf("Informe a altura do tronco: ");
+    scanf("%d", &A);
+
+    printf("Informe a largura do tronco: ");
+    scanf("%d", &L);
+
+    if (B % 2 && A < B / 2 && 2 <= A && 1 <= L && L < B/2 + 1 && L % 2){
+        for (i = 0; i < B - (B / 2) + 1; i++){
+                for(j = 0; j < B - (B / 2) + 1 - i; j++){
+              printf (" ");
+          }
+          for(j = 0; j < i*2-1; j++){
+            printf("*");
+          }
+          
+            printf("\n");
+        }
+    
+        for (i = 0; i < A; i++){
+                for(j = L - L / 2; j < B - (B / 2) + 1; j++){
+              printf (" ");
+          }
+          printf("*");
+          for (j = 1; j < L; j++)
+          {
+            printf("*");
+          }
+          
+          printf("\n");
+        }
+    }
+    else{
+        printf("valores invalidos");
+    }
+    return 0;
+}

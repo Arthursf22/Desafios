@@ -1,0 +1,49 @@
+# include <stdio.h> 
+//quadrado
+int main(){
+    int h, i, j, tipo;
+
+    printf("informe a altura do quadrado: ");
+    scanf("%d", &h);
+
+    printf("Digite 1 para quadrado preenchido ou 0 para quadrado vazado: ");
+    scanf("%d", &tipo);
+    
+    if(tipo == 1){
+        for (i = 0; i < h; i++){
+            for(j = 0; j < h; j++){
+          printf ("*");
+      }
+        printf("\n");
+    }
+    }
+
+    if (tipo == 0){
+        for (i = 0; i < h; i++){
+        printf("*");
+    }
+    printf("\n");
+    
+    for (i = 2; i < h; i++){
+        printf("*");
+
+        for (j = 2; j < h; j++){
+            printf(" ");
+        }
+        printf("* \n");
+    }
+
+    for (i = 1; i < h; i++)
+    {
+        printf("*");
+    }
+    printf("* \n");
+    }
+
+    else{
+        printf("Digite 1 ou 0 por gentileza");
+    }
+    
+    
+    return 0;
+}

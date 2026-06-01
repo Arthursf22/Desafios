@@ -1,0 +1,24 @@
+#include <stdio.h>
+//triangulo de pascal
+int main() {
+  
+    int i, j, k, N; 
+
+    printf("Informe a altura do triangulo de pascal: ");
+    scanf("%d", &N);
+
+    for (i = 0; i < N; i++) {
+        
+        for (j = 0; j < N - i - 1; j++)
+            printf(" ");
+        int valor = 1;
+        for ( k = 0; k <= i; k++) {
+            printf("%d ", valor);
+          
+            valor = valor * (i - k) / (k + 1);  
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
